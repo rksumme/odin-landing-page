@@ -22,7 +22,8 @@ html, body {
 ul {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 20px;
+    justify-content: center;
 }
 
 a {
@@ -70,7 +71,48 @@ a {
 }
 
 .section1 img {
-    flex: 1 0 auto;
-    width: 100px;
+    flex: 1 1 auto;
+    max-width: 40%;
     object-fit: contain;
+}
+
+.title-section2 {
+    font-size: 36px;
+    margin: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.blocks {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    flex-wrap: wrap;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.block img {
+    object-fit: contain;
+    border: 3px solid #3882f6;
+    border-radius: 8px;
+}
+
+.block img, .text {
+    width: 150px;
+}
+
+.text {
+    padding: 10px;
+}
+
+.section2 {
+    padding: 0px 100px 100px 100px;
+    font-family: Roboto, sans-serif;
 }
